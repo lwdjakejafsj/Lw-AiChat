@@ -1,0 +1,157 @@
+server:
+  port: 8091
+
+spring:
+  datasource:
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql:3306/openai?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+
+mybatis:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+  config-location:  classpath:/mybatis/config/mybatis-config.xml
+
+# 日志
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml
+
+rocketmq:
+  # 服务地址，多个用逗号分开
+  name-server: rmqnamesrv:9876
+  consumer:
+    group: springboot_consumer_group
+    # 一次拉取消息最大值，注意是拉取消息的最大值而非消费最大值
+    pull-batch-size: 10
+  producer:
+    # 发送同一类消息的设置为同一个group，保证唯一
+    group: springboot_producer_group
+    # 发送消息超时时间，默认3000
+    sendMessageTimeout: 10000
+    # 发送消息失败重试次数，默认2
+    retryTimesWhenSendFailed: 2
+    # 异步消息重试此处，默认2
+    retryTimesWhenSendAsyncFailed: 2
+    # 消息最大长度，默认1024 * 1024 * 4(默认4M)
+    maxMessageSize: 4096
+    # 压缩消息阈值，默认4k(1024 * 4)
+    compressMessageBodyThreshold: 4096
+    # 是否在内部发送失败时重试另一个broker，默认false
+    retryNextServer: false
+
+# 监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # 暴露所有端点，包括自定义端点
+  endpoint:
+    metrics:
+      enabled: true
+    health:
+      show-details: always # 显示详细的健康检查信息
+  metrics:
+    export:
+      prometheus:
+        enabled: true # 启用Prometheus
+  prometheus:
+    enabled: true # 启用Prometheus端点
+  jmx:
+    enabled: true # 启用JMX监控
+  system:
+    cpu:
+      enabled: true # 启用CPU监控
+    memory:
+      enabled: true # 启用内存监控
+
+# Redis
+redis:
+  sdk:
+    config:
+      host: redis
+      port: 6379
+      pool-size: 10
+      min-idle-size: 5
+      idle-timeout: 30000
+      connect-timeout: 5000
+      retry-attempts: 3
+      retry-interval: 1000
+      ping-interval: 60000
+      keep-alive: true
+
+app:
+  config:
+    # 限制接口访问次数
+    limit-count: 10
+    white-list:
+
+aliyun:
+  oss:
+    file:
+      endpoint:
+      keyid:
+      keysecret:
+      bucketname:
+
+# 线程池配置
+thread:
+  pool:
+    executor:
+      config:
+        core-pool-size: 20
+        max-pool-size: 50
+        keep-alive-time: 5000
+        block-queue-size: 5000
+        policy: CallerRunsPolicy
+
+
+# 微信公众号配置
+wx:
+  config:
+    originalId:
+    appid:
+    token:
+
+# 支付配置；如果你申请了支付渠道，则可以配置 enable = true，否则就配置 false 走流程测试
+wxpay:
+  config:
+    # 状态；true = 开启、false 关闭
+    enabled: false
+    # 申请支付主体的 appid
+    appid:
+    # 商户号
+    mchid:
+    # 回调地址
+    notify-url:
+    # 商户API私钥路径
+    private-key-path: cert/apiclient_key.pem
+    # 商户证书序列号：openssl x509 -in apiclient_cert.pem -noout -serial
+    merchant-serial-number:
+    # 商户APIV3密钥
+    api-v3-key:
+
+# 支付配置；如果你申请了支付渠道，则可以配置 enable = true，否则就配置 false 走流程测试
+# 测试账号 pftfqx4930@sandbox.com
+
+alipay:
+  config:
+    # 状态；true = 开启、false 关闭
+    enabled:
+    app_id:
+    # 回调地址
+    notify-url:
+    return-url:
+    merchant-private-key:
+    alipay-public-key:
+    gateway-url:
+
+# 模型信息配置
+model:
+  ali:
+    apiHost:
+    apiKey:
+  chatglm:
+    apiHost:
+    apiSecretKey:

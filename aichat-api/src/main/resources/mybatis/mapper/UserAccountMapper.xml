@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.luowei.aichat.dao.mapper.UserAccountMapper">
+
+    <resultMap id="UserAccountMap" type="io.luowei.aichat.dao.po.UserAccount">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="openid" column="openid" jdbcType="VARCHAR"/>
+            <result property="userName" column="user_name" jdbcType="VARCHAR"/>
+            <result property="avatar" column="avatar" jdbcType="VARCHAR"/>
+            <result property="totalQuota" column="total_quota" jdbcType="INTEGER"/>
+            <result property="surplusQuota" column="surplus_quota" jdbcType="INTEGER"/>
+            <result property="totalSignCount" column="total_sign_count" jdbcType="INTEGER"/>
+            <result property="integral" column="integral" jdbcType="INTEGER"/>
+            <result property="modelTypes" column="model_types" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="TINYINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,user_name,avatar,openid,total_quota,
+        surplus_quota,total_sign_count,integral,model_types,status,
+        create_time,update_time
+    </sql>
+
+    <insert id="insert" parameterType="io.luowei.aichat.dao.po.UserAccount">
+        insert into user_account( openid,user_name,avatar,total_quota, surplus_quota,
+                                  total_sign_count,integral,model_types,
+                                  status,create_time,update_time
+                                 )
+                    values(#{openid},#{userName},#{avatar},#{totalQuota},#{surplusQuota},
+                           #{totalSignCount},#{integral},
+                           #{modelTypes},#{status},now(), now())
+    </insert>
+
+    <resultMap id="userAccountMap" type="io.luowei.aichat.dao.po.UserAccount">
+        <id column="id" property="id"/>
+        <result column="openid" property="openid"/>
+        <result column="user_name" property="userName"/>
+        <result column="avatar" property="avatar"/>
+        <result column="total_quota" property="totalQuota"/>
+        <result column="surplus_quota" property="surplusQuota"/>
+        <result column="total_sign_count" property="totalSignCount"/>
+        <result column="integral" property="integral"/>
+        <result column="model_types" property="modelTypes"/>
+        <result column="status" property="status"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <select id="queryUserAccount" parameterType="java.lang.String" resultMap="userAccountMap">
+        SELECT openid,user_name,avatar,total_quota, total_sign_count,integral,surplus_quota, model_types, status
+        FROM user_account
+        WHERE openid = #{openid}
+    </select>
+
+    <select id="getTotalSignCount" resultType="java.lang.Integer">
+        SELECT total_sign_count
+        FROM user_account
+        WHERE openid = #{openid}
+    </select>
+
+    <update id="subAccountQuota" parameterType="java.lang.String">
+        UPDATE user_account SET surplus_quota = surplus_quota - 1, update_time = now()
+        WHERE openid = #{openid} AND surplus_quota > 0 AND status = 0
+    </update>
+
+    <update id="addAccountQuota" parameterType="io.luowei.aichat.dao.po.UserAccount">
+        UPDATE user_account SET
+                                total_quota = total_quota + #{totalQuota},
+                                surplus_quota = surplus_quota + #{surplusQuota},
+                                update_time = now()
+        WHERE openid = #{openid}
+    </update>
+
+    <update id="updateUserAccount" parameterType="io.luowei.aichat.dao.po.UserAccount">
+        UPDATE user_account SET
+                                user_name = #{userName},
+                                avatar = #{avatar},
+                                update_time = now()
+        WHERE openid = #{openid}
+
+    </update>
+
+    <update id="updateTotalSignCount" parameterType="java.lang.String">
+        UPDATE user_account SET total_sign_count = total_sign_count + 1, update_time = now()
+        WHERE openid = #{openid}
+    </update>
+
+    <update id="updateIntegral" parameterType="java.lang.String">
+        UPDATE user_account SET integral = integral + 1, update_time = now()
+        WHERE openid = #{openid}
+    </update>
+</mapper>

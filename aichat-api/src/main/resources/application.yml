@@ -1,0 +1,6 @@
+spring:
+  config:
+    name: chatgpt-api
+  profiles:
+    active: dev
+#    active: prod

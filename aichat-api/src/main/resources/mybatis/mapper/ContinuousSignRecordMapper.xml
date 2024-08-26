@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.luowei.aichat.dao.mapper.ContinuousSignRecordMapper">
+
+    <resultMap id="BaseResultMap" type="io.luowei.aichat.dao.po.ContinuousSignRecord">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="openid" column="openid" jdbcType="VARCHAR"/>
+            <result property="startTime" column="start_time" jdbcType="DATE"/>
+            <result property="endTime" column="end_time" jdbcType="DATE"/>
+            <result property="signLength" column="sign_length" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <resultMap id="continuousSignRecordMap" type="io.luowei.aichat.dao.po.ContinuousSignRecord">
+        <id property="id" column="id"/>
+        <result property="openid" column="openid" />
+        <result property="startTime" column="start_time" />
+        <result property="endTime" column="end_time" />
+        <result property="signLength" column="sign_length"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,openid,start_time,end_time,sign_length
+    </sql>
+
+    <insert id="insert">
+        insert into continuous_sign_record (openid,start_time,end_time,sign_length )
+        values(
+                  #{openid}, #{startTime}, #{endTime}, #{signLength}
+              )
+    </insert>
+
+
+    <update id="update" parameterType="io.luowei.aichat.dao.po.ContinuousSignRecord">
+        UPDATE continuous_sign_record
+        SET sign_length = #{signLength},
+            start_time = #{startTime},
+            end_time = #{endTime}
+        WHERE openid = #{openid} AND id = #{id}
+    </update>
+
+    <delete id="batchDelete" parameterType="java.util.List">
+        DELETE FROM continuous_sign_record
+        WHERE id IN
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="queryContinuousSignRecordByEndTime" resultMap="continuousSignRecordMap">
+        select id,openid,start_time,end_time,sign_length from continuous_sign_record
+        where openid = #{openid} and end_time = #{date}
+    </select>
+
+    <select id="queryContinuousSignRecordByStartTime" resultMap="continuousSignRecordMap">
+        select id,openid,start_time,end_time,sign_length from continuous_sign_record
+        where openid = #{openid} and start_time = #{date}
+    </select>
+
+</mapper>

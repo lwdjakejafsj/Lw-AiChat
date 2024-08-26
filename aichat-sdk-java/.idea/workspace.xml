@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="77ed4498-4278-44af-8ddf-5fee11641554" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/common/config/openai/AliModelConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/common/config/openai/GlmModelConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/common/mq/OrderMessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/common/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/common/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/interceptor/HTTPInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/model/ali/AliModelExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/model/ali/config/AliConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/model/ali/valobj/AliCompletionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/model/ali/valobj/AliCompletionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/model/ali/valobj/EventType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/model/ali/valobj/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/model/chatglm/CharGLMModelExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/model/chatglm/ChatGLMModelExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/model/chatglm/config/ChatGLMConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/model/chatglm/valobj/CharGLMCompletionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/model/chatglm/valobj/ChatGLMCompletionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/model/chatglm/valobj/ChatGLMCompletionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/model/chatglm/valobj/EventType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/model/chatglm/valobj/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/parameter/ChatChoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/parameter/CompletionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/parameter/CompletionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/parameter/ImageEditRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/parameter/ImageEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/parameter/ImageRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/parameter/ImageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/parameter/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/parameter/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/parameter/ParameterHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/parameter/PictureContentEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/parameter/PictureRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/parameter/Usage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/ChatGptApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/ChatGptApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/common/config/ChatGptConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/common/config/openai/OpenaiConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/common/config/PrometheusConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/common/config/PrometheusConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/common/mq/OrderPaySuccessListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/common/mq/OrderPaySuccessListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/controller/ChatGptAIServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/controller/ChatGptAIServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/controller/SaleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/controller/SaleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/model/chatgpt/ChatGPTRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/model/chatgpt/ChatGPTRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/model/chatgpt/ChatProcessAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/model/chatgpt/ChatProcessAggregate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/service/chatgpt/AbstractChatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/service/chatgpt/AbstractChatService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/service/chatgpt/IChatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/service/chatgpt/IChatService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/service/chatgpt/IChatServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/service/chatgpt/IChatServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/service/chatgpt/rule/Impl/AccessLimitFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/service/chatgpt/rule/Impl/AccessLimitFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/service/chatgpt/rule/Impl/ModelTypeFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/java/io/luowei/chatgpt/service/chatgpt/rule/Impl/ModelTypeFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/ChatGptApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/ChatGptApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/common/config/ChatGptConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/controller/ChatGptAIServiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/controller/ChatGptAIServiceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/model/chatgpt/ChatGPTRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/model/chatgpt/ChatGPTRequestDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/model/chatgpt/ChatProcessAggregate.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/model/chatgpt/ChatProcessAggregate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/service/chatgpt/AbstractChatService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/service/chatgpt/AbstractChatService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/service/chatgpt/IChatServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/service/chatgpt/IChatServiceImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/service/chatgpt/IChatServiceImpl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/service/chatgpt/IChatServiceImpl$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/service/chatgpt/IChatServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chatgpt-api/target/classes/io/luowei/chatgpt/service/chatgpt/IChatServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/IOpenAiApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/constants/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/Executor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/Executor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/aigc/GLMExecutor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/aigc/GLMOldExecutor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/interceptor/OpenAiInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/model/ChatCompletionRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/model/ChatCompletionResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/model/ChatCompletionSyncResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/model/EventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/common/EventType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/model/ImageCompletionRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/model/ImageCompletionResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/model/Model.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/session/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/session/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/session/OpenAiSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/session/OpenAiSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/session/OpenAiSessionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/session/OpenAiSessionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/session/defaults/DefaultOpenAiSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/session/defaults/DefaultOpenAiSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/session/defaults/DefaultOpenAiSessionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/session/defaults/DefaultOpenAiSessionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/utils/BearerTokenUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/luowei/sdk/executor/model/chatglm/utils/BearerTokenUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/luowei/sdk/chatglm/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/luowei/sdk/chatglm/ApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/IOpenAiApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/constants/Constants$Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/constants/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/executor/Executor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/luowei/sdk/executor/Executor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/executor/aigc/GLMExecutor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/executor/aigc/GLMExecutor$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/executor/aigc/GLMExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/executor/aigc/GLMOldExecutor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/executor/aigc/GLMOldExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/interceptor/OpenAiInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$ChatCompletionRequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Prompt$Content$ContentBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Prompt$Content$ImageUrl$ImageUrlBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Prompt$Content$ImageUrl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Prompt$Content$Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Prompt$Content.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Prompt$PromptBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Prompt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Tool$Function$FunctionBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Tool$Function.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Tool$Retrieval$RetrievalBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Tool$Retrieval.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Tool$ToolBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Tool$Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Tool$WebSearch$WebSearchBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Tool$WebSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest$Tool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionResponse$Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionResponse$Delta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionResponse$Meta$MetaBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionResponse$Meta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionResponse$Usage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionSyncResponse$ChatGLMData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionSyncResponse$Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionSyncResponse$Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionSyncResponse$Usage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ChatCompletionSyncResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/EventType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ImageCompletionRequest$ImageCompletionRequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ImageCompletionRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ImageCompletionResponse$Image.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/ImageCompletionResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/Model.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/model/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/session/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/luowei/sdk/session/Configuration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/session/OpenAiSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/luowei/sdk/session/OpenAiSession.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/session/defaults/DefaultOpenAiSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/luowei/sdk/session/defaults/DefaultOpenAiSession.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/session/defaults/DefaultOpenAiSessionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/luowei/sdk/session/defaults/DefaultOpenAiSessionFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/luowei/sdk/utils/BearerTokenUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/luowei/sdk/chatglm/ApiTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/luowei/sdk/chatglm/ApiTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/luowei/sdk/chatglm/ApiTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/luowei/sdk/chatglm/ApiTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/luowei/sdk/chatglm/ApiTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/dev-ops/environment/environment-docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/dev-ops/environment/environment-docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/dev-ops/monitor/etc/prometheus/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/dev-ops/monitor/etc/prometheus/prometheus.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2jVRxBmdvwCcPeE9AhdxTe2gCh4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77ed4498-4278-44af-8ddf-5fee11641554" name="Changes" comment="" />
+      <created>1721470505680</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721470505680</updated>
+      <workItem from="1721470507572" duration="147000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
